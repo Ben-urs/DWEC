@@ -1,0 +1,153 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>agoodshop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
+    <div class="container">
+      <h1 class="navbar-brand" href="#">agoodshop</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navEcom">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navEcom">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Soporte</a></li>
+          <li class="nav-item border rounded-3"><a class="nav-link" href="#">Contactar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Producto Principal -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Imágenes -->
+        <div class="col-md-6">
+          <div class="badge rounded-0 bg-success badge-secondary btn btn-lg me-2 text-white ">128gb</div>
+          <img id="mainImage" src="https://via.placeholder.com/400x400" class="product-img mb-3">
+        </div>
+        <!-- Detalles -->
+        <div class="col-md-6">
+          <div class="tab-content p-4 border-top-0" id="productTabContent">
+            <div class="tab-pane fade show active" id="desc">
+              <p><span class="badge text-danger">OFERTA</span></p>
+              <h1 class="mb-3">Comprar un iFhone 13 Pro</h1>
+              <p>iFhone 13: Tu nuevo superpoder. Nuestro sistema de camara dual mas avanzada. El chip que hace morder el polvo a la 
+                competencia. Un subidon de autonomia que vaya  si notarás.
+                Ceramica Shield, mas duro que cualquier vidrio de smarthpone.
+              </p>
+              <p>Pantalla Super Retina XDR de 6.1 pulgadas. Diseño robusto con bordes planos y resistentes al agua.</p>
+            </div>
+          <h3 class="fw-bold">938,99€ <button class="btn btn-primary btn-sm ms-2">Comprar</button></h3>
+          <div class="d-flex mt-3 flex-wrap gap-3">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+              <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5"/>
+            </svg> Envío rápido, gratuito y sin contacto</div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+              <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+            </svg> Devoluciones fáciles y gratuitas</div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+              <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+            </svg>Posibilidad de pago a plazos</div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accesorios Recomendados -->
+      <h3 class="fw-bold mb-4">Accesorios recomendados</h3>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img class="img2" src="https://via.placeholder.com/300x200">
+            <div class="card-body ">
+              <h5 class="card-title ">Cragador</h5>
+              <p class="card-text text-start">El adaptador de corriente USB-C de 20 W es muy rapido y eficiente, asi que va de perlas para cargar tus dispositivos en cualquier lugar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img class="img2" src="https://via.placeholder.com/300x200">
+            <div class="card-body">
+              <h5 class="card-title">Base de carga inalámbrica</h5>
+              <div class="badge rounded badge-secondary btn bg-danger btn-lg me-2 text-white ">Oferta</div>
+              <p class="card-text text-start">Sistema de soporte para que sigas tu smartphone comodamente mientras lo cargas. Compatible con carga rapido de 20W.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img class="img2" src="https://via.placeholder.com/300x200">
+            <div class="card-body ">
+              <h5 class="card-title">Funda piel</h5>
+              <p class="card-text text-start">Fabricadas en piel europea curtida y teñida con un proceso especial, son suaves al tacto y adquieren un tono natural con el tiempo. Los botones de aluminio camnian a la perfeccion con el acabado a la piel.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img class="img2" src="https://via.placeholder.com/300x200">
+            <div class="card-body ">
+              <h5 class="card-title">Cargador</h5>
+              <div class="badge rounded badge-secondary btn bg-primary btn-lg me-2 text-white ">Nuevo</div>
+              <p class="card-text text-start">El adaptador de corriente USB-C de 20 W es muy rapido y eficiente, asi que va de perlas para cargar tus dispositivos en cualquier lugar.</p>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Sorteo -->
+  <section id="contact" class="py-5  .bg-info">
+    <div class="container py-5">
+  <div class="cal1 row  p-5 rounded">
+    <div class="col-md-6">
+      <h1 class="fw-bold mb-4">Participa en el sorteo de un iPhone 13</h1>
+      <p>Este verano, ¡venimos cargados de premios! Así que antes de irte de vacaciones, ¡participa en nuestro sorteo! y podrás llevarte un regalo increíble como un nuevo iPhone 13.</p>
+      <p>Rellena este formulario para ser uno de los afortunados.</p>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" id="name" class="form-control" placeholder="Ari Gold">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="arigold@mga.com">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+  
+  <!-- Footer -->
+  <footer class="bg-light border-top text-center py-4 mt-5">
+    <div class="container">
+      </div>
+      <small class="text-muted">&copy; agoodshop</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function changeImage(src) {
+      document.getElementById('mainImage').src = src;
+    }
+  </script>
+</body>
+</html>
