@@ -1,0 +1,17 @@
+<section>
+  <table class="table table-bordered my-5">
+    <thead>
+      <tr>
+        <th class="text-center">Producto</th>
+        <th class="text-center">Cantidad</th>
+        <th class="text-center">Precio/Unidad</th>
+        <th class="text-center">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(product of listaProductos; track product.sku){
+        <app-prod-comp-principal [producto]="product" [currency]="currency"></app-prod-comp-principal>
+      }
+    </tbody>
+  </table>
+</section>

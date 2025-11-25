@@ -1,0 +1,28 @@
+<div class="container d-flex flex-column m-5 p-4 border border-lighty">
+  <h1>Total</h1>
+  <hr>
+ <div class="container d-flex">
+  <h5 class="col-5"><strong>Producto</strong></h5>
+  <h5 class="col-5"><strong>Cantidad</strong></h5>
+  <h5 class="col-5"><strong>Precio</strong></h5>
+</div>
+
+  @for(producto of productosAnadidos; track producto.sku){
+    <div class="container d-flex">
+      <span class="col-5"><strong>{{producto.title}}</strong></span>
+      <span class="col-5">x{{producto.cantidad}}</span>
+      <span class="col-5">{{(producto.price*producto.cantidad).toFixed(2)}}{{this.CarritoServices.getCurrency()}}</span>
+    </div>
+  }
+
+  @empty{
+    <div class="container">
+      <p>No se han añadido productos</p>
+    </div>
+  }
+  
+  <hr>
+  <div class="container">
+    <p><strong>Total: </strong>{{this.CarritoServices.getPrecioTotal().toFixed(2)}}{{this.CarritoServices.getCurrency()}}</p>
+  </div>
+</div>
