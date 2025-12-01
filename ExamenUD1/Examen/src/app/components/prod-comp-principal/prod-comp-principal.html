@@ -1,0 +1,27 @@
+<tr>
+  <td class="border text-center">
+    <h6>{{ producto.name }}</h6>
+    <small>{{ producto.category }}</small>
+  </td>
+
+  <td class="border text-center">
+    <button
+      class="btn btn-danger btn-sm"
+      (click)="restar()"
+      [disabled]="cantidad === 0">-</button>
+
+    <input type="text" [value]="cantidad" readonly>
+
+    <button
+      class="btn btn-success btn-sm"
+      (click)="sumar()">+</button>
+  </td>
+
+  <td class="border text-center">
+    {{ producto.price }}{{ cartService.getCurrency() }}
+  </td>
+
+  <td class="border text-center">
+    {{ (producto.price * cantidad).toFixed(2) }}{{ cartService.getCurrency() }}
+  </td>
+</tr>

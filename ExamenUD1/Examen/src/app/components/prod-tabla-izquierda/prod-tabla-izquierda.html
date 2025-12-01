@@ -1,0 +1,16 @@
+<table class="table table-bordered my-5">
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (product of listaProductos; track product.id) {
+      <app-prod-comp-principal [producto]="product"></app-prod-comp-principal>
+    }
+  </tbody>
+</table>

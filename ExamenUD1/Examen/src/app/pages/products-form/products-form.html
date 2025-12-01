@@ -1,0 +1,40 @@
+<h1>Nuevo producto</h1>
+
+<form [formGroup]="productForm" (ngSubmit)="save()" class="card p-4">
+
+  <input
+    class="form-control mb-2"
+    placeholder="Título"
+    formControlName="name"
+  />
+
+  <textarea
+    class="form-control mb-2"
+    placeholder="Descripción"
+    formControlName="description">
+  </textarea>
+
+  <input
+    class="form-control mb-2"
+    type="number"
+    placeholder="Precio"
+    formControlName="price"
+  />
+
+  <input
+    class="form-control mb-2"
+    placeholder="Categoría"
+    formControlName="category"
+  />
+
+  <input
+    class="form-control mb-2"
+    placeholder="Imagen (URL)"
+    formControlName="image"
+  />
+
+  <button class="btn btn-success mt-3" [disabled]="productForm.invalid">
+    Guardar
+  </button>
+
+</form>

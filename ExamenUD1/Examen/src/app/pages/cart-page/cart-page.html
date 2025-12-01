@@ -1,0 +1,25 @@
+<h1>Carrito</h1>
+
+<table class="table">
+  <tr>
+    <th>Producto</th>
+    <th>Cantidad</th>
+    <th>Precio</th>
+    <th>Total</th>
+  </tr>
+
+  @for (item of cart; track item.id) {
+    <tr>
+      <td>{{ item.name }}</td>
+      <td>
+        <button class="btn btn-danger btn-sm" (click)="less(item.id)">-</button>
+        {{ item.cantidad }}
+        <button class="btn btn-success btn-sm" (click)="more(item.id)">+</button>
+      </td>
+      <td>{{ item.price }} {{ currency }}</td>
+      <td>{{ item.price * item.cantidad | number:'1.2-2' }} {{ currency }}</td>
+    </tr>
+  }
+</table>
+
+<h3>Total: {{ total | number:'1.2-2' }} {{ currency }}</h3>

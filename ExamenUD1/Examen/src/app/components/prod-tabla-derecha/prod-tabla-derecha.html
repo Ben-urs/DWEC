@@ -1,0 +1,18 @@
+<div class="container m-5 p-4 border">
+  <h3>Total</h3>
+  <hr>
+
+  @for (p of cartService.getCart(); track p.id) {
+    <div class="d-flex justify-content-between">
+      <span>{{ p.name }} x{{ p.cantidad }}</span>
+      <span>{{ (p.price * p.cantidad).toFixed(2) }}€</span>
+    </div>
+  }
+
+  @empty {
+    <p>No hay productos en el carrito</p>
+  }
+
+  <hr>
+  <strong>Total: {{ cartService.getTotal().toFixed(2) }}€</strong>
+</div>

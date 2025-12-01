@@ -1,0 +1,37 @@
+<h1 class="mb-4">Productos</h1>
+
+<div class="row mb-4">
+  <div class="col-md-6">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Buscar producto..."
+      [(ngModel)]="filtroTexto"
+      (input)="filtrar()" />
+  </div>
+
+  <div class="col-md-4">
+    <select class="form-select"
+      [(ngModel)]="filtroCategoria"
+      (change)="filtrar()">
+      <option value="all">Todas</option>
+      <option value="hombre">Hombre</option>
+      <option value="mujer">Mujer</option>
+      <option value="niño">Niño</option>
+      <option value="precio">Precio</option>
+      <option value="activo">Activo</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  @for (product of filteredProducts; track product.id) {
+    <div class="col-md-4 mb-4">
+      <app-product-card [product]="product"></app-product-card>
+    </div>
+  }
+
+  @empty {
+    <p>No hay productos con esos filtros</p>
+  }
+</div>
